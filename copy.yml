@@ -1,0 +1,11 @@
+---
+- name: copiar un archivo
+  hosts: localhost
+  remote_user: roxanagregorio
+  tasks: 
+   - name: copy from local to remote server
+     copy:
+	     src: index.html
+	     dest: /var/www/html
+	     backup: yes 
+    
